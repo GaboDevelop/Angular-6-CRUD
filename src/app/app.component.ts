@@ -6,5 +6,41 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-crud';
+  title = 'Angular Crud';
+
+  empleados = [
+    {
+      'nombre': 'Gabriel' ,
+      'cargo': 'manager',
+      'email':'gabriel@gmail.com'
+    },
+    {
+      'nombre': 'Rafael' ,
+      'cargo': 'Desarrollador',
+      'email':'rafael@gmail.com'
+    },
+    {
+      'nombre': 'Pedro' ,
+      'cargo': 'Diseñador',
+      'email':'pedro@gmail.com'
+    }
+  ];
+
+  model:any = {};
+
+  addEmpleado():void{
+    this.empleados.push(this.model);
+  }
+
+  deleteEmpleado():void{
+
+  }
+
+  editEmpleado():void{
+
+  }
+
+  updateEmpleado():void{
+
+  }
 }
